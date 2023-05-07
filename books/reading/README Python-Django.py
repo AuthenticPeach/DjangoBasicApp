@@ -1,5 +1,4 @@
 # README Python-Django 
-def multiline_example():
 # Hello Future-self, Welcome back to Django
 # If you are reading this, then you want to return to databases with Django.
 # 1. So Django works by importing its module into your project with pip "python -m pip install django", (after step 4)

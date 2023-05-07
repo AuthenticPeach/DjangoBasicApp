@@ -1,4 +1,10 @@
-from django.http import HttpResponse
+from django.shortcuts import render
+from .models import Book
 
 def index(request):
-    return HttpResponse("Hello World!")
+    books = Book.objects.all()
+    return render(request, 'reading/index.html', {'books': books})
+
+def info(request, book_id):
+    book = Book.objects.get(pk=book_id)
+    return render(request, 'reading/info.html', {'book': book})
